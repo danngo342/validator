@@ -1,0 +1,19 @@
+{
+  "name": "validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "t": "tsc"
+  },
+  "author": "Dan Ngo",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.22.0",
+    "reflect-metadata": "^0.1.13"
+  }
+}
