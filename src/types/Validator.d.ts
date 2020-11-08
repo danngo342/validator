@@ -1,0 +1,1 @@
+export type ParamValidator<T> = (param: T) => boolean;

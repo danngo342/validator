@@ -1,3 +1,10 @@
+Plans
+- feature: Dynamically generate validator functions
+- feature: validator factory for user to pass in validating logic
+- feature: implement validators for functional programming paradigm (would also have to learn Haskell to be more familiar with this coding style)
+- feature: use invariant.js (however, this does not necessarily need to be used in every validator. Honestly, this may just be more perfectly suited to be user-specific, by having client developers pass in the logging mechanism, such as invariant.js instead)
+- refactor: if i'm feeling really crazy, then perhaps i can dynamically generate functions via the Function (captial 'F') constructor with interpolated template strings 
+
 A Decorator is a special kind of declaration that can be attached to a class declaration, method, accessor, property, or parameter. Decorators use the form @expression, where expression must evaluate to a function that will be called at runtime with information about the decorated declaration.
 
 method signatures of varius types of decorators
