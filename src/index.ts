@@ -1,1 +1,2 @@
-export * from "./isDefined";
+export * from "./validators";
+export { validate } from "./core/validate";
