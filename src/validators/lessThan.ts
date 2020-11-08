@@ -1,5 +1,5 @@
 import { paramValidateBuilder } from "../core/paramValidateBuilder";
-import { greaterThanValidator } from "../core/paramValidators";
+import { lessThanValidator } from "../core/paramValidators";
 import { DecoratorMetadata } from "../types/DecoratorMetadata";
 
 /** * 
@@ -17,11 +17,11 @@ import { DecoratorMetadata } from "../types/DecoratorMetadata";
  * parameterIndex: The ordinal index of the parameter 
  * in the function’s parameter list.
  */
-export function greaterThan(threshold: number) {
+export function lessThan(threshold: number) {
   return function (...config: DecoratorMetadata) {
     paramValidateBuilder(
-      "greaterThan",
-      greaterThanValidator(threshold),
+      "lessThan",
+      lessThanValidator(threshold),
       config,
     );
   }

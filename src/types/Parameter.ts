@@ -1,6 +1,6 @@
 import { ParamValidator } from "./Validator";
 
-interface Parameter {
+export interface Parameter {
   readonly decoratorName: string | Symbol;
   readonly propertyKey: string | Symbol;
   readonly parameterIndex: number;
