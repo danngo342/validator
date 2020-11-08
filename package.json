@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "scripts": {
+    "pre-commit": "lint-staged",
     "t": "tsc"
   },
   "author": "Dan Ngo",
@@ -27,6 +28,9 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint src/*.ts --fix-dry-run"
+    ]
   }
 }
