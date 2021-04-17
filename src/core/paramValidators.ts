@@ -6,21 +6,21 @@ import { ParamValidator } from "../types/Validator";
  * only one parameter each)
  */
 
-export const isDefinedValidator: ParamValidator<any> = (param) => param;
+export const isDefinedValidator: ParamValidator<any> = (param) => !!param;
 
-export const greaterThanValidator = (
+export const greaterThanFactory = (
   threshold: number
 ): ParamValidator<number> => (param: number) => param > threshold;
 
-export const greaterOrEqualValidator = (
+export const greaterOrEqualFactory = (
   threshold: number
 ): ParamValidator<number> => (param: number) => param >= threshold;
 
-export const lessThanValidator = (
-  threshold: number
-): ParamValidator<number> => (param: number) => param < threshold;
+export const lessThanFactory = (threshold: number): ParamValidator<number> => (
+  param: number
+) => param < threshold;
 
-export const lessOrEqualValidator = (
+export const lessOrEqualFactory = (
   threshold: number
 ): ParamValidator<number> => (param: number) => param <= threshold;
 

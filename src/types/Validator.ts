@@ -1,1 +1,1 @@
-export type ParamValidator<T> = (param: T) => boolean;
+export type ParamValidator<T = any> = (param: T) => boolean;
