@@ -2,8 +2,7 @@ import { ParamValidator } from "../types/Validator";
 
 /*
  * If multiple parameters are needed, then functions
- * should be curried over monads (functions with
- * only one parameter each)
+ * should be curried
  */
 
 export const isDefinedValidator: ParamValidator<any> = (param) => !!param;
